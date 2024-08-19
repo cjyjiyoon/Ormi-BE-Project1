@@ -1,0 +1,56 @@
+html {
+  font-family: Pretendard;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+body {
+  background-image: url(./modal/무제-1\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding:60px auto 40px auto; */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 60px 108px 40px 108px;
+}
+.img_hodu {
+  width: 110px;
+  height: 112px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+h1 {
+  color: #d97652;
+  width: 212px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  margin: auto;
+  margin-bottom: 12px;
+}
+p {
+  width: 365px;
+  height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: auto;
+  margin-bottom: 38px;
+}
+button {
+  color: #ffffff;
+  width: 183px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #d97652;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: auto;
+}
