@@ -1,0 +1,45 @@
+html{
+    font-family: Pretendard;
+    font-size: 10px;
+    height: 100%;
+}
+ul{
+    padding: 6.6rem 0 0 2rem;;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+li{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+.slide{
+    width: 28.9rem;
+    height: 100%;
+    background-color: #263140;
+    padding: 2.2rem 0 0 2rem;
+}
+.button_back{
+    background-color: #263140;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.btn_download{
+    color: #FFFFFF;
+    width: 11.4rem;
+    height: 4rem;
+    background-color: #D97652;
+    border-radius: 4rem;
+    margin: 5rem 0 0 2rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
