@@ -8,18 +8,29 @@ html {
   scrollbar-width: none;
 }
 header {
+  height: 90rem;
   background-color: #f2e9d8;
   margin: 0;
   padding: 0rem 32rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 @media (max-width: 768px) {
   header {
+    height: 79.4rem;
     background-color: #f2e9d8;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 }
 nav {
   position: fixed;
+  /* 자바스크립트로 넣기 */
   top: 0px;
   width: 100%;
   height: 10.2rem;
@@ -43,11 +54,12 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    margin: 0;
   }
   .nav_logo {
     width: 9.2rem;
     height: 2.8rem;
+    margin-right: auto;
   }
 }
 body {
@@ -55,6 +67,12 @@ body {
   min-width: 100vh;
   max-width: 192rem;
   box-sizing: border-box;
+}
+@media (max-width:768px){
+  body{
+    width: auto;
+    box-sizing: border-box;
+  }
 }
 main {
   background-image: url(./img/img_5.png);
@@ -74,8 +92,10 @@ main {
     background-position: center bottom;
     background-size: contain;
     box-sizing: border-box;
-    padding-bottom: 17.2rem;
+    padding: 0 3.2rem 17.2rem 3.2rem;
+    /* padding-bottom: 17.2rem; */
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -134,7 +154,7 @@ h3 {
 }
 @media (max-width: 768px) {
   h3 {
-    font-size: 1.8px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.4rem;
     text-align: center;
@@ -175,9 +195,10 @@ p {
   }
 }
 hr {
-  /* margin-top: 5em;
-  margin-bottom: 4.25em; */
-  margin: 8rem 32rem 6.8rem 32rem;
+  width: 1280px;
+  height: 1px;
+  margin: 8rem 0 6.8rem 0;
+  color: #c4c4c4;
 }
 @media (max-width: 768px) {
   hr {
@@ -225,9 +246,7 @@ hr {
     display: none;
   }
 }
-
-/* main */
-.div_main1 {
+.div_header {
   width: auto;
   height: 79.8rem;
   top: 10.2rem;
@@ -237,40 +256,53 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3.2rem 32rem 0 32rem;
+  padding-top: 3.2rem;
   gap: 17rem;
   box-sizing: border-box;
 }
-@media (max-width:768px){
-.div_main1{
-  padding: 4rem 3.2rem 0 3.2rem;
+@media (max-width: 768px) {
+  .div_header {
+    padding: 4rem 3.2rem 0 3.2rem;
+    background-color: aqua;
+    flex-direction: column;
+  }
 }
-}
-.main1_text {
+.header_text {
+  background-color: cornflowerblue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 4rem;
+  margin-top: 4rem;
 }
-.p_main1 {
+.p_header {
   width: 42rem;
 }
-.main1_cat {
+.header_cat {
   width: 41.5rem;
   height: 76.6rem;
-  position: bottom;
-  /* 
-  background-image: url(./img/img_cat_png.png);
+  /* position: bottom; */
+
+  /* background-image: url(./img/img_cat_png.png);
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 41.5rem 76.6rem; */
+  background-position: bottom; */
+  /* background-size: 41.5rem 76.6rem; */
 }
-.img_cat {
+@media (max-width:768px){
+.header_cat{
+  width: 19.7rem;
+  height: 36rem;
+}
+}
+.img_header_cat {
   width: 100%;
   height: auto;
   object-fit: scale-down;
 }
+
+/* main */
+
 .div_main2 {
   display: flex;
   flex-direction: row;
@@ -278,7 +310,27 @@ hr {
   align-items: center;
   gap: 11rem;
   padding: 8rem 32rem 0 32rem;
+
 }
+@media (max-width:768px){
+  .div_main2{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4rem 0 6rem 0;
+    /* padding-top: 4rem;
+    padding-bottom: 6rem; */
+    gap: 4rem;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+  }
+  .div_main2_img{
+    width: 100%;
+  }
+}
+
 .article_main2_text {
   text-align: left;
   width: 51rem;
@@ -286,12 +338,37 @@ hr {
   flex-direction: column;
   gap: 3rem;
 }
+@media(max-width:768px) {
+  .article_main2_text {
+    width: 100%;
+    text-align: left;
+    /* width: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: darkkhaki;
+  }
+  .article_main2_text p{
+    text-align: left;
+  }
+}
 
 .article_gallery {
   margin-top: 12rem;
   text-align: center;
   padding: 0 32rem;
 }
+@media (max-width:768px){
+  .article_gallery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: deeppink;
+    box-sizing: border-box;
+  } 
+}
+  /* 여기를해 */
+
 .div_gallery_text {
   display: flex;
   flex-direction: column;
@@ -299,6 +376,11 @@ hr {
   padding-bottom: 8.8rem;
 }
 @media (max-width: 768px) {
+  .div_gallery_text{
+    gap: 3rem;
+    padding-bottom: 4rem;
+    background-color: thistle;
+  }
   .div_gallery_text p {
     font-size: 1.6rem;
     line-height: 2rem;
@@ -318,6 +400,12 @@ hr {
   width: 66rem;
   height: 39rem;
 }
+@media (max-width:768px){
+  .img-article{
+    width: auto;
+    height: auto;
+  }
+}
 .img-gallery {
   width: 37.8rem;
   height: 37.8rem;
@@ -331,21 +419,25 @@ hr {
 .div_gallery {
   display: flex;
   flex-direction: column;
-  gap: 7.3rem;
+  gap: 7.2rem;
   padding-bottom: 10rem;
 }
 @media (max-width: 768px) {
   .div_gallery {
-    gap: 0.8rem;
+    gap: 3.2rem;
+    background-color: gold;
   }
 }
 
 .div_gallery_row {
-  gap: 7.2rem;
+  display: flex;
+  gap: 7.3rem;
   flex: 1 1 30%;
 }
 @media (max-width: 768px) {
   .div_gallery_row {
+    display: flex;
+    flex-direction: column;
     gap: 3.2rem;
     flex: 1 1 100%;
   }
@@ -355,18 +447,23 @@ hr {
   margin-top: 2.8rem;
   width: 13.5rem;
 }
-.subscribe {
-  width: 13.5rem;
-}
+
 .download {
   width: 14rem;
 }
+
 .section_map {
   padding: 0;
-  margin: 0 32rem;
+  /* margin: 0 32rem; */
   display: flex;
   flex-direction: column;
   margin-bottom: 8rem;
+}
+@media (max-width:768px){
+  .section_map{
+    background-color: aquamarine;
+    box-sizing: border-box;
+  }
 }
 .h2_map_text {
   padding-bottom: 2rem;
@@ -378,8 +475,22 @@ hr {
 .img-map {
   background-color: #e8e8e8;
   width: 128rem;
-  height: 52em;
+  height: 52rem;
   border-radius: 12px;
+}
+@media (max-width:768px){
+  .img-map{
+    /* width: 100%; */
+    height : 13.2rem;
+    margin: 3.2rem;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  /* .mapmap{
+    width: auto;
+    height: 13.2rem;
+    object-fit: cover;
+  } */
 }
 
 .section_subscribe {
@@ -395,6 +506,19 @@ hr {
   align-items: center;
   box-sizing: border-box;
 }
+@media (max-width:768px){
+  .section_subscribe{
+    width: auto;
+    height: auto;
+    margin-top: 3.2rem;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3.6rem 3.2rem 3rem 3.2rem;
+    
+  }
+
+}
 .div_subscribe {
   width: 47.1rem;
   height: 9.9rem;
@@ -402,12 +526,30 @@ hr {
   flex-direction: column;
   gap: 1.8rem;
 }
+@media (max-width:768px){
+.div_subscribe{
+  width: auto;
+  height: auto;
+  gap: 2rem;
+}
+}
+
 .p_subscribe {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.8rem;
   text-align: left;
   color: #f2e9d8;
+}
+@media (max-width:768px){
+  
+  .p_subscribe{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+
+  }
+  
 }
 .div_email {
   background-color: #ffffff;
@@ -419,12 +561,28 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width:768px){
+  .div_email{
+    width: auto;
+    height: auto;
+    gap: 2rem;
+  }
+  }
 .img_email {
   width: 2.4rem;
   height: 2.4rem;
   margin: 2rem 1.6rem 2rem 2.8rem;
 }
+@media (max-width:768px){
+.img_email{
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 1.1rem 1.4rem 1.1rem 1.6rem;
+}
+  }
+  
 .email_text {
+  font-size: 1.6rem;
   width: 31.5rem;
   border: none;
   background-color: transparent;
@@ -433,10 +591,30 @@ hr {
   outline: none;
 }
 
+.subscribe1 {
+  width: 13.5rem;
+}
+@media (max-width:768px){
+  .subscribe1 {
+    display: none;
+  }
+  }
+.subscribe2{
+    display: none;
+  }
+@media (max-width:768px) {
+  .subscribe2{
+    display: flex;
+    width: 11.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* footer */
 .footer_pc {
   width: 100%;
-  background-color: aqua;
+  display: flex;
 }
 .icon {
   width: 4.2rem;
@@ -446,10 +624,13 @@ hr {
 .footer_logo {
   width: 22.6rem;
   height: 7rem;
+  margin-right: auto;
 }
 
 /* scroll button */
 .btn_scroll {
+  display:none;
+  /* 스크롤시 나타나게 JS로 넣기 */
   background-image: url(./img/keyboard_arrow_up.png);
   background-position: center;
   bottom: 2.4rem;
