@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 html {
+  width: 100vw;
   font-size: 10px;
   font-family: Pretendard, "Pretendard Variable";
   background-color: #ffffff;
@@ -594,7 +595,7 @@ hr {
     line-height: 2rem;
   }
 } */
-.div_email {
+.form_email {
   background-color: #ffffff;
   width: 53rem;
   height: 6rem;
@@ -605,7 +606,7 @@ hr {
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  .div_email {
+  .form_email {
     width: 100%;
     height: auto;
     box-sizing: border-box;
