@@ -1,0 +1,19 @@
+.btn_scroll {
+    display: none;
+    /* 스크롤시 나타나게 JS로 넣기 */
+    background-image: url(./img/keyboard_arrow_up.png);
+    background-position: center;
+    bottom: 2.4rem;
+    right: 2.4rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background-color: rgb(255, 255, 255, 0.8);
+    border: solid 1px #c4c4c4;
+    position: fixed;
+  }
+  .btn_scroll:hover {
+    background-image: url(./img/keyboard_arrow_up_focus.png);
+    background-position: center;
+  }
+  

@@ -1,0 +1,150 @@
+header {
+  height: 90rem;
+  background-color: #f2e9d8;
+  margin: 0;
+  padding: 0rem 32rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100vw;
+    height: 79.4rem;
+    background-color: #f2e9d8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 10.2rem;
+  background-color: #f2e9d8;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 0;
+  right: 0;
+  padding: 0em 32rem;
+}
+@media (max-width: 768px) {
+  nav {
+    height: 7.6rem;
+    width: 100vw;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+.nav_logo {
+  width: 13rem;
+  height: 4rem;
+}
+@media (max-width: 768px) {
+  .nav_logo {
+    width: 9.2rem;
+    height: 2.8rem;
+    margin-right: auto;
+  }
+}
+.nav_element {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4.8rem 0 75.6rem;
+  display: flex;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .nav_element {
+    display: none;
+  }
+}
+
+.button_menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .button_menu {
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  nav [class$="download"] {
+    display: none;
+  }
+}
+.div_header {
+  width: auto;
+  height: 79.8rem;
+  top: 10.2rem;
+  left: 0;
+  background-color: #f2e9d8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.2rem;
+  gap: 17rem;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .div_header {
+    top: 7.6rem;
+    width: 100vw;
+    padding: 4rem 3.2rem 0 3.2rem;
+    background-color: #f2e9d8;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.header_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .header_text {
+    width: 100%;
+    padding-top: 4rem;
+    align-items: center;
+  }
+}
+.p_header {
+  width: 42rem;
+}
+
+@media (max-width: 768px) {
+  .p_header {
+    width: 100%;
+  }
+}
+.header_cat {
+  width: 41.5rem;
+  height: 76.6rem;
+}
+@media (max-width: 768px) {
+  .header_cat {
+    width: 19.7rem;
+    height: 36rem;
+    overflow: hidden;
+  }
+}
+.img_header_cat {
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}

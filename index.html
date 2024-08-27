@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="reset.css" />
     <!-- <link rel="stylesheet" href="mobile.css" media="screen and (max-width:768px)"> -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-modal.css" />
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="scroll-button.css">
   </head>
   <body>
     <header class="header">
       <nav class="nav_top" id="Top-navigation-bar">
-        <img class="nav_logo" src="./img/Logo-fin.png" alt="" />
+        <img class="nav_logo" src="./img/Logo-fin.png" alt="호두 로고" />
         <div class="nav_element">
           <span class="span home">Home</span>
           <span class="span about">About</span>
@@ -47,7 +51,7 @@
           <img
             class="img_header_cat"
             src="./img/img_cat_png.png"
-            alt="종이상자를 머리에 쓴 고양이"
+            alt="종이상자를 머리에 쓴 고양이 호두"
           />
         </div>
       </div>
@@ -55,7 +59,11 @@
     <main>
       <div class="div_main2">
         <div class="div_main2_img">
-          <img class="img img-article" src="./img/img_4.png" />
+          <img
+            class="img img-article"
+            src="./img/img_4.png"
+            alt="누워있는 고양이 호두"
+          />
         </div>
         <article class="article_main2_text">
           <h2>
@@ -80,14 +88,38 @@
         </div>
         <div class="div_gallery">
           <div class="div_gallery_row">
-            <img class="img img-gallery" src="./img/img_1.png" alt="" />
-            <img class="img img-gallery" src="./img/img_2.png" alt="" />
-            <img class="img img-gallery" src="./img/img_3.png" alt="" />
+            <img
+              class="img img-gallery"
+              src="./img/img_1.png"
+              alt="캣타워 위의 고양이 호두"
+            />
+            <img
+              class="img img-gallery"
+              src="./img/img_2.png"
+              alt="벽을 바라보는 고양이 호두"
+            />
+            <img
+              class="img img-gallery"
+              src="./img/img_3.png"
+              alt="나를 바라보는 고양이 호두"
+            />
           </div>
           <div class="div_gallery_row">
-            <img class="img img-gallery" src="./img/img_1-1.png" alt="" />
-            <img class="img img-gallery" src="./img/img_2-1.png" alt="" />
-            <img class="img img-gallery" src="./img/img_3-1.png" alt="" />
+            <img
+              class="img img-gallery"
+              src="./img/img_1-1.png"
+              alt="고양이 호두의 얼굴"
+            />
+            <img
+              class="img img-gallery"
+              src="./img/img_2-1.png"
+              alt="나를 올려다보는 고양이 호두"
+            />
+            <img
+              class="img img-gallery"
+              src="./img/img_3-1.png"
+              alt="하품하는 고양이 호두"
+            />
           </div>
         </div>
         <div class="div_gallery_explore">
@@ -102,7 +134,7 @@
           330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
         </p>
         <div class="img-map">
-          <img class="mapmap" src="./img/Frame 6.png" alt="map" />
+          <img class="mapmap" src="./img/Frame 6.png" alt="지도" />
         </div>
       </section>
       <section class="section_subscribe">
@@ -114,7 +146,12 @@
             Lorem Ipsum has been the industry's standard dummy text
           </p>
         </div>
-        <form class="form_email" action="" method="post" onsubmit="return false">
+        <form
+          class="form_email"
+          action=""
+          method="post"
+          onsubmit="return false"
+        >
           <div class="img_email">
             <img src="./img/mail.png" alt="" />
           </div>
@@ -127,25 +164,27 @@
         </form>
         <button class="btn subscribe2" type="button">Subscribe</button>
       </section>
+      <!-- <div class="background_container"></div> -->
+
       <button class="btn_scroll" id="scroll-top-btn"></button>
     </main>
     <footer>
       <div class="footer_pc">
         <div class="div_footer_logo">
-          <img class="footer_logo" src="./img/Logo-fin.png" alt="" />
+          <img class="footer_logo" src="./img/Logo-fin.png" alt="호두 로고" />
         </div>
         <div class="icon-family">
           <button class="icon" id="btnBlog">
-            <img src="./img/icon-blog.png" alt="" />
+            <img src="./img/icon-blog.png" alt="블로그 바로가기" />
           </button>
           <button class="icon" id="btnInsta">
-            <img src="./img/icon-insta.png" alt="" />
+            <img src="./img/icon-insta.png" alt="인스타그램 바로가기" />
           </button>
           <button class="icon" id="btnFacebook">
-            <img src="./img/icon-facebook.png" alt="" />
+            <img src="./img/icon-facebook.png" alt="페이스북 바로가기" />
           </button>
           <button class="icon" id="btnYoutube">
-            <img src="./img/icon-youtube.png" alt="" />
+            <img src="./img/icon-youtube.png" alt="유튜브 바로가기" />
           </button>
         </div>
       </div>
@@ -181,7 +220,6 @@
         <li class="li_about">About</li>
         <li class="li_support">Support</li>
         <button class="btn download" type="button">Download</button>
-
       </ul>
     </div>
 
