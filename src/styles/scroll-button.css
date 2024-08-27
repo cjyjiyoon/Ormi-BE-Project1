@@ -1,7 +1,7 @@
 .btn_scroll {
     display: none;
     /* 스크롤시 나타나게 JS로 넣기 */
-    background-image: url(./img/keyboard_arrow_up.png);
+    background-image: url(../assets/images/keyboard_arrow_up.png);
     background-position: center;
     bottom: 2.4rem;
     right: 2.4rem;
@@ -13,7 +13,7 @@
     position: fixed;
   }
   .btn_scroll:hover {
-    background-image: url(./img/keyboard_arrow_up_focus.png);
+    background-image: url(../assets/images/keyboard_arrow_up_focus.png);
     background-position: center;
   }
   

@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  background-image: url(./img/img_5.png);
+  background-image: url(../assets/images/img_5.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100vw 340px;
@@ -43,7 +43,7 @@ main {
 @media (max-width: 768px) {
   main {
     width: 100vw;
-    background-image: url(./img/img_5.png);
+    background-image: url(../assets/images/img_5.png);
     background-size: 100vw 24rem;
     padding: 0 3.2rem 17.2rem 3.2rem;
     flex-direction: column;

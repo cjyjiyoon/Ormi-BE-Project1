@@ -70,16 +70,20 @@
     line-height: 2rem;
   }
 }
+
 .sec_heading {
   color: #d97652;
 }
+
 .text_highlight {
   color: #d97652;
 }
+
 .img {
   border-radius: 30px;
   box-shadow: 10px 10px 30px 0px #00000040;
 }
+
 .img-article {
   width: 66rem;
   height: 39rem;
@@ -90,6 +94,7 @@
     height: auto;
   }
 }
+
 .img-gallery {
   width: 37.8rem;
   height: 37.8rem;
@@ -160,9 +165,11 @@
     margin-bottom: 4rem;
   }
 }
+
 .h2_map_text {
   padding-bottom: 2rem;
 }
+
 .p_location {
   color: #606367;
   padding-bottom: 4.8rem;
@@ -175,6 +182,7 @@
     text-align: left;
   }
 }
+
 .img-map {
   background-color: #e8e8e8;
   width: 128rem;
@@ -237,6 +245,7 @@
   text-align: left;
   color: #f2e9d8;
 }
+
 .form_email {
   background-color: #ffffff;
   width: 53rem;
@@ -255,6 +264,7 @@
     gap: 1.4rem;
   }
 }
+
 .img_email {
   width: 2.4rem;
   height: 2.4rem;
@@ -275,7 +285,6 @@
   border: 0;
   background-color: transparent;
 }
-
 @media (max-width: 768px) {
   .email_text {
     width: auto;
@@ -285,6 +294,7 @@
     margin-right: auto;
   }
 }
+
 .email_text:focus {
   outline: none;
 }
@@ -297,6 +307,7 @@
     display: none;
   }
 }
+
 .subscribe2 {
   display: none;
 }
