@@ -1,6 +1,5 @@
 const topBtn = document.querySelector('.btn_scroll');
 const nav = document.querySelector('.nav_top');
-const header = document.querySelector('.header');
 const modal = document.querySelector('.modal_layer');
 const subscribeButtons = document.querySelectorAll('.subscribe1, .subscribe2');
 const slideMenuButton = document.querySelector('.button_menu');
