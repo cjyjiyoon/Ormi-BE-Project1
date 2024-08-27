@@ -13,11 +13,8 @@ header {
     width: 100vw;
     height: 79.4rem;
     background-color: #f2e9d8;
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
   }
 }
 nav {
@@ -41,13 +38,11 @@ nav {
     height: 7.6rem;
     width: 100vw;
     padding: 0 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin: 0;
     box-sizing: border-box;
   }
 }
+
 .nav_logo {
   width: 13rem;
   height: 4rem;
@@ -59,6 +54,7 @@ nav {
     margin-right: auto;
   }
 }
+
 .nav_element {
   justify-content: space-between;
   align-items: center;
@@ -85,6 +81,7 @@ nav {
     display: none;
   }
 }
+
 .div_header {
   width: auto;
   height: 79.8rem;
@@ -109,6 +106,7 @@ nav {
     gap: 3rem;
   }
 }
+
 .header_text {
   display: flex;
   flex-direction: column;
@@ -123,15 +121,16 @@ nav {
     align-items: center;
   }
 }
+
 .p_header {
   width: 42rem;
 }
-
 @media (max-width: 768px) {
   .p_header {
     width: 100%;
   }
 }
+
 .header_cat {
   width: 41.5rem;
   height: 76.6rem;
@@ -143,6 +142,7 @@ nav {
     overflow: hidden;
   }
 }
+
 .img_header_cat {
   width: 100%;
   height: auto;
