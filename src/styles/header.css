@@ -20,7 +20,7 @@ header {
 nav {
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   height: 10.2rem;
   background-color: #f2e9d8;
   font-size: 1.6rem;
@@ -36,7 +36,6 @@ nav {
 @media (max-width: 768px) {
   nav {
     height: 7.6rem;
-    width: 100vw;
     padding: 0 2rem;
     margin: 0;
     box-sizing: border-box;

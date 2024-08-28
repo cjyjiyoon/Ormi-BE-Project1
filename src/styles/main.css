@@ -151,6 +151,11 @@
 .download {
   width: 14rem;
 }
+@media (max-width:768px) {
+  .download{
+    width: 11.4rem;
+  }
+}
 
 .section_map {
   padding: 0;

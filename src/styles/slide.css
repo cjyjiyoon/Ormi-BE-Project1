@@ -12,6 +12,11 @@
   overflow:hidden;
   transition: right 0.4s ease;
 }
+@media (min-width:769px) {
+  .slide{
+    display: none;
+  }
+}
 .slide.open{
   right: 0;
 }
